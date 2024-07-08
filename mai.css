@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/************** base ****************/
+
+* {
+    /*サイトのサイズ*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img{ 
+    width: 15%;
+    height: auto;
+}
+
+/************** layout ****************/
+header h1 {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Tiny5", sans-serif;
+    font-style: normal;
+}
+
+.side_text{
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.side_text {
+    text-align: center;
+}
+
+#music {
+    background: white;
+    text-align: center;
+}
+
+.music1{
+    padding: 2rem;
+}
+
+.wurts {
+    padding-top: 5rem;
+}
+
+footer {
+    background: white;
+    text-align: center;
+}
+
+/*タブレット用*/
+@media all and (min-width: 600px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  /*コンピュータ用*/
+@media all and (min-width: 1025px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .sec01 {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    .sec02 {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  
+    .sec03 {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
